@@ -17,6 +17,8 @@ print(s.find('onkot')) # 찾는 문자열이 없으면 -1
 # %% 메소드 index()
 s = 'python kotrin'
 print(s.index('rin'))
+
+# %%
 print(s.index('java')) # 오류 발생
 
 # %% 모듈 re
@@ -38,6 +40,7 @@ m = search('thon', s)
 print(m)
 print(m.group()) # 실제 일치하는 문자열
 
+# %%
 # 일치하는 문자열의 위치 첨자
 x, y = m.start(), m.end()
 print(x, y, m.span())
@@ -52,5 +55,11 @@ m = search(p, s)
 print(m.group())
 print(m.span(), m.start(), m.end())
 
+# %%
 fa = findall(p, s)
 print(fa)
+
+# %%
+dir(str)
+
+# %%
